@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+        font-family: "Poppins", sans-serif;  
+}
+
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    color: #1D2C2D;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.navlinks{
+    display: flex;
+    column-gap: 15px;
+}
+.navlinks a{
+    color:  black;
+    text-decoration: none;
+}
+.navitems:hover{
+    text-decoration: underline;
+
+}
+.menubar{
+    display: none;
+}
+.menunavlink{
+    height: 100%;
+    width:50%;
+    background-color: #1D2C2D;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 25px;
+    transition: 0.8s;
+}
+#menuxbutton{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    border: none;
+    
+}
+
+.menuitems{
+    padding: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.menunavlink a{
+    color: white;
+    text-decoration: none;
+}
+.menunavlink a:hover{
+    color:gray;
+}
+@media screen and (max-width:640px){
+    .menubar{
+        display: block;
+        cursor: pointer;
+    }
+    .navlinks{
+        display: none;
+    }
+    .productadbody img{
+        display: none;
+    }
+    .cusexperience1 p{
+        display: none;
+    }
+    .cus-experi-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .cus-experi-content1{
+        margin: 7px;
+    }
+    
+}
+.productadbody{
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+.productad{
+    padding: 8px;
+    margin-right: 35px;
+}
+.productad button{
+    background-color: #1D2C2D;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.productad button:hover{
+    color: gray;
+}
+.cusexperience1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    
+}
+.cus-experi-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}  
+.cus-experi-content1{
+    border-radius: 5px;
+    background-color: #F2F4F7;
+    padding: 10px;
+    flex-basis: 31%;
+}
+
+.shopbtn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    left: 50px;
+    top: 120px;
+    font-size: 16px;
+    color: #36454F;
+    cursor: pointer;
+}
+.shopbtn i{
+    margin-top: 10px;
+    display: inline;
+}
+.productcontainer{
+    margin-top: 25px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.productcontainer1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.pcontainer1{
+    flex-basis: 20%;
+    position:relative;
+   
+}
+.productcontainer2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shopbtn:hover{
+    color: lightgray;
+}
+
+.subscribecontainer{
+    text-align: center;
+    padding: 15px;
+}
+
+.subcontainer{
+    padding: 15px;
+}
+.subcontainer input{
+    padding: 9px;
+    width:80%;
+    margin-top: 8px;
+    border: 2px solid #1D2C2D;
+}
+.subcontainer button{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color:  #1D2C2D;
+    color: white;
+    cursor: pointer;
+}
+
+.subcontainer button:hover{
+    color: gray;
+}
+
+.footercontainer{
+    background-color: #1D2C2D;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
