@@ -7,6 +7,7 @@ body{
         font-family: "Poppins", sans-serif;  
 }
 
+/* Navigation bar style */
 .navcontainer{
     display: flex;
     justify-content: space-between;
@@ -28,8 +29,10 @@ body{
     text-decoration: underline;
 
 }
+/* Menubar style */
 .menubar{
     display: none;
+    
 }
 .menunavlink{
     height: 100%;
@@ -37,9 +40,9 @@ body{
     background-color: #1D2C2D;
     position: fixed;
     top: 0;
-    left: -60%;
+    left: -80%;
     padding: 25px;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 #menuxbutton{
     background-color: transparent;
@@ -65,29 +68,9 @@ body{
 .menunavlink a:hover{
     color:gray;
 }
-@media screen and (max-width:640px){
-    .menubar{
-        display: block;
-        cursor: pointer;
-    }
-    .navlinks{
-        display: none;
-    }
-    .productadbody img{
-        display: none;
-    }
-    .cusexperience1 p{
-        display: none;
-    }
-    .cus-experi-content{
-        display: flex;
-        flex-direction: column;
-    }
-    .cus-experi-content1{
-        margin: 7px;
-    }
+
     
-}
+/* Body content style */
 .productadbody{
     display: flex;
     gap: 50px;
@@ -111,6 +94,8 @@ body{
 .productad button:hover{
     color: gray;
 }
+
+/* customer experience style */
 .cusexperience1{
     display: flex;
     justify-content: space-between;
@@ -150,6 +135,8 @@ body{
     margin-top: 10px;
     display: inline;
 }
+
+/* product section style */
 .productcontainer{
     margin-top: 25px;
     margin-left: 10px;
@@ -159,26 +146,28 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    justify-content: space-around;
 }
 .pcontainer1{
-    flex-basis: 20%;
+    
     position:relative;
    
 }
 .productcontainer2{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .shopbtn:hover{
     color: lightgray;
 }
 
+/* subscribe section style */
 .subscribecontainer{
     text-align: center;
     padding: 15px;
 }
-
 .subcontainer{
     padding: 15px;
 }
@@ -204,10 +193,129 @@ body{
     color: gray;
 }
 
+/* footer section style */
 .footercontainer{
     background-color: #1D2C2D;
     color: white;
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 15px;
+    padding-right: 11px;
+}
+
+/* search container */
+.search-container{
+    padding: 18px;
+    margin: auto;
+}
+.search-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 24px;
+}
+.search-container2 #input1{
+    font-size: 16px;
+    width:100%;
+    background-color: transparent;
+    border: none;
+}
+.search-container2 #input1:focus{
+    outline:none;
+    width: 100%;
+    background-color:transparent;
+}
+/* collection product style */
+.collection-container{
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.collection-product{
+    text-align: center;
+    flex-basis: 20%;
+    
+}
+
+/* contactus page style */
+#contact-container{
+   width: 75%;
+   margin: 14px 0px 20px 12.5%;
+   background-color: #1D2C2D; 
+   
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+#contact-container form{
+    color: white;
+    padding: 5.5%;
+}
+/* #contact-container form label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+#contact-container form input{
+    width: 63vw;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 12px 0px 18px 0px;
+}
+#contact-container form textarea{
+    width: 60vw;
+    padding: 48px;
+    border-radius: 5px;
+    margin: 12px 0px 18px 0px;
+}
+#contact-container form button{
+    padding: 10px 18px 10px 18px;
+    background-color: rgb(234, 255, 0);
+    margin-bottom: 16px;
+    color:#1D2C2D;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+}
+/* media query for screen-width 640px */
+@media screen and (max-width:640px){
+    .menubar{
+        display: block;
+        cursor: pointer;
+
+    }
+    .navlinks{
+        display: none;
+    }
+    .productadbody #body1img{
+        display: none;
+    }
+    
+    .cusexperience1 p{
+        display: none;
+    }
+    .cus-experi-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .cus-experi-content1{
+        margin: 7px;
+    }
+    #contact-container form h1{
+        font-size: 29px;
+    }
+    #contact-container form input{
+        width: 56vw;
+        margin-left: 0px;
+    }
+    #contact-container form textarea{
+        width: 82.5%;
+        padding: 25px;
+    }
 }
