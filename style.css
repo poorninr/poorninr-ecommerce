@@ -156,7 +156,7 @@ body{
 .product-container2{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .shopbtn:hover{
@@ -246,7 +246,7 @@ body{
 /* contactus page style */
 #contact-container{
    width: 75%;
-   margin: 14px 0px 20px 12.5%;
+   margin: 20px 0px 20px 12.5%;
    background-color: #1D2C2D; 
    
    display: flex;
@@ -269,7 +269,7 @@ body{
 }
 #contact-container form textarea{
     width: 60vw;
-    padding: 48px;
+    padding: 44px;
     border-radius: 5px;
     margin: 12px 0px 18px 0px;
 }
