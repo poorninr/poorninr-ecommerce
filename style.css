@@ -8,7 +8,7 @@ body{
 }
 
 /* Navigation bar style */
-.navcontainer{
+.nav-container{
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -17,24 +17,24 @@ body{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
-.navlinks{
+.nav-links{
     display: flex;
     column-gap: 15px;
 }
-.navlinks a{
+.nav-links a{
     color:  black;
     text-decoration: none;
 }
-.navitems:hover{
+.nav-items:hover{
     text-decoration: underline;
 
 }
 /* Menubar style */
-.menubar{
+.menu-bar{
     display: none;
     
 }
-.menunavlink{
+.menu-nav-link{
     height: 100%;
     width:50%;
     background-color: #1D2C2D;
@@ -44,7 +44,7 @@ body{
     padding: 25px;
     transition: 0.5s;
 }
-#menuxbutton{
+#menu-button{
     background-color: transparent;
     color: white;
     font-size: 20px;
@@ -55,33 +55,33 @@ body{
     
 }
 
-.menuitems{
+.menu-items{
     padding: 18px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.menunavlink a{
+.menu-nav-link a{
     color: white;
     text-decoration: none;
 }
-.menunavlink a:hover{
+.menu-nav-link a:hover{
     color:gray;
 }
 
     
 /* Body content style */
-.productadbody{
+.product-ad-body{
     display: flex;
     gap: 50px;
     padding: 50px;
     justify-content: center;
 }
-.productad{
+.product-ad{
     padding: 8px;
     margin-right: 35px;
 }
-.productad button{
+.product-ad button{
     background-color: #1D2C2D;
     color: white;
     padding-top: 10px;
@@ -91,12 +91,12 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
-.productad button:hover{
+.product-ad button:hover{
     color: gray;
 }
 
 /* customer experience style */
-.cusexperience1{
+.cus-experience1{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,23 +137,23 @@ body{
 }
 
 /* product section style */
-.productcontainer{
+.product-container{
     margin-top: 25px;
     margin-left: 10px;
     padding: 10px;
 }
-.productcontainer1{
+.product-container1{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .pcontainer1{
     
     position:relative;
    
 }
-.productcontainer2{
+.product-container2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -164,20 +164,20 @@ body{
 }
 
 /* subscribe section style */
-.subscribecontainer{
+.subscribe-container{
     text-align: center;
     padding: 15px;
 }
-.subcontainer{
+.sub-container{
     padding: 15px;
 }
-.subcontainer input{
+.subc-ontainer input{
     padding: 9px;
     width:80%;
     margin-top: 8px;
     border: 2px solid #1D2C2D;
 }
-.subcontainer button{
+.sub-container button{
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 10px;
@@ -189,12 +189,12 @@ body{
     cursor: pointer;
 }
 
-.subcontainer button:hover{
+.sub-container button:hover{
     color: gray;
 }
 
 /* footer section style */
-.footercontainer{
+.footer-container{
     background-color: #1D2C2D;
     color: white;
     padding-top: 30px;
@@ -263,7 +263,7 @@ body{
 } */
 #contact-container form input{
     width: 63vw;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     margin: 12px 0px 18px 0px;
 }
@@ -285,19 +285,31 @@ body{
 }
 /* media query for screen-width 640px */
 @media screen and (max-width:640px){
-    .menubar{
+    .menu-bar{
         display: block;
         cursor: pointer;
 
     }
-    .navlinks{
+    .nav-links{
         display: none;
     }
-    .productadbody #body1img{
+    .product-ad{
+        margin: 0 0 0 10.5%;
+    }
+    .product-ad h1{
+        font-size: 1.8rem;
+    }
+    /* .product-ad p{
+        text-indent: 20px;
+    }
+    .product-ad button{
+
+    } */
+    .product-ad-body #body1-img{
         display: none;
     }
     
-    .cusexperience1 p{
+    .cus-experience1 p{
         display: none;
     }
     .cus-experi-content{
@@ -307,15 +319,23 @@ body{
     .cus-experi-content1{
         margin: 7px;
     }
+    #contact-container{
+        margin-top: 20px;
+        border: none;
+        border-radius: 7px;
+    }
+    #contact-container form{
+        margin-left: 5px;
+    }
     #contact-container form h1{
-        font-size: 29px;
+        font-size: 27px;
     }
     #contact-container form input{
-        width: 56vw;
+        width: 54vw;
         margin-left: 0px;
     }
     #contact-container form textarea{
-        width: 82.5%;
-        padding: 25px;
+        width: 85.8%;
+        padding: 20px;
     }
 }

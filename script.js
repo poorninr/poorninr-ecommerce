@@ -1,12 +1,12 @@
 // index page script
-var menubar=document.querySelector(".menubar");
-var menunavlink=document.querySelector(".menunavlink");
+var menubar=document.querySelector(".menu-bar");
+var menunavlink=document.querySelector(".menu-nav-link");
 function menuclick()
 {
     menunavlink.style.left="0"
 }
 
-var menuxbutton=document.getElementById("menuxbutton");
+var menuxbutton=document.getElementById("menu-button");
 function menucancel()
 {
     menunavlink.style.left="-80%"
